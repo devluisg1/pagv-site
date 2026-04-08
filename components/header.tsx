@@ -33,9 +33,9 @@ export default function Header() {
             <Image
               src="/logo-pagv.png"
               alt="PAGV Logo"
-              width={160}
-              height={64}
-              className={`h-14 sm:h-16 w-auto transition-all duration-300 ${
+              width={200}
+              height={80}
+              className={`h-16 sm:h-20 w-auto transition-all duration-300 ${
                 scrolled ? "brightness-0" : "brightness-0 invert"
               }`}
               priority

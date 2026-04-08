@@ -99,7 +99,7 @@ export default function ConstrucoesComerciaisIndustriais() {
               <div className="bg-[#f0f4f8] rounded-xl p-6 border-l-4 border-[#d4af37]">
                 <h3 className="text-xl font-bold text-[#1e3a52] mb-3">Como reduzimos riscos e retrabalhos</h3>
                 <p className="text-gray-700 leading-relaxed text-justify">
-                  Aplicamos método e governança típicos de projetos complexos: definição clara de escopo, alinhamento técnico, sequência de execução bem planejada e controle de qualidade por etapa. Isso reduz mudanças improvisadas, retrabalho e atrasos — especialmente em ambientes com operação ativa.
+                  Aplicamos método e governança típicos de projetos complexos: definição clara de escopo, alinhamento técnico, sequência de execução bem planejada e controle de qualidade por etapa. Isso reduz mudanças improvisadas, retrabalho e atrasos, especialmente em ambientes com operação ativa.
                 </p>
               </div>
 

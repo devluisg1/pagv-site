@@ -7,8 +7,8 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Cristiano Cantusio",
-    text: "Experiência técnica, empenho e atenção aos detalhes na execução",
+    name: "Fátima M.",
+    text: "Para mim a principal qualidade da PAGV que me faz indicá-los é a confiança que eles nos transmitem, nos projetos, nos profissionais e na clareza de orçamentos e de custos.",
     rating: 5,
   },
   {

@@ -8,12 +8,12 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
           <div className="space-y-4 sm:space-y-6 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e3a52] leading-tight text-balance">
-              CONHEÇA MAIS SOBRE A PAGV CONSTRUÇÃO
+              CONHEÇA MAIS SOBRE A PAGV
             </h2>
 
             <div className="space-y-4 sm:space-y-5 text-gray-700 leading-relaxed text-base sm:text-lg">
               <p>
-                A PAGV® nasceu da parceria entre os engenheiros Plinio Alves e Glauco Vilena, com mais de 20 anos de experiência em gestão de projetos. Atuamos na gestão completa de obras de alto luxo — residenciais e comerciais — com um atendimento próximo e altamente personalizado.
+                A PAGV® nasceu da parceria entre os engenheiros Plinio Alves e Glauco Vilena, com mais de 20 anos de experiência em gestão de projetos. Atuamos na gestão completa de obras de alto luxo, residenciais e comerciais, com um atendimento próximo e altamente personalizado.
               </p>
 
               <p>

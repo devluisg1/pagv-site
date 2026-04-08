@@ -61,7 +61,7 @@ export default function ConstrucoesResidenciais() {
           <div className="text-center mb-12 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e3a52]">Obras residenciais de alto luxo com gestão completa</h1>
             <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-              Alto domínio técnico, controle de custos e cronograma, e padrão de execução elevado — do planejamento aos acabamentos, com acompanhamento próximo e decisões bem orientadas.
+              Alto domínio técnico, controle de custos e cronograma, padrão de execução elevado, do planejamento aos acabamentos, com acompanhamento próximo e decisões bem orientadas.
             </p>
             <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
           </div>

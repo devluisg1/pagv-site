@@ -6,9 +6,10 @@ export default function Services() {
     {
       title: "Obras Residenciais",
       description:
-        "Gestão completa de obras residenciais de alto luxo com alto domínio técnico, controle de custos e cronograma, e padrão de execução elevado, do planejamento aos acabamentos.",
+        "Alto domínio técnico, controle de custos e cronograma, padrão de execução elevado, do planejamento aos acabamentos, com acompanhamento próximo e decisões bem orientadas.",
       image: "/modern-luxury-residential-house-with-pool.jpg",
       link: "/servicos/construcoes-residenciais",
+      buttonText: "ENTENDA NOSSO MÉTODO",
     },
     {
       title: "Obras Comerciais",
@@ -16,6 +17,7 @@ export default function Services() {
         "Obras e reformas comerciais com foco em prazo e operação. Processos de grandes projetos aplicados ao seu negócio, com comunicação objetiva.",
       image: "/commercial-industrial-interior-with-yellow-lighting.jpg",
       link: "/servicos/construcoes-comerciais-industriais",
+      buttonText: "VEJA COMO TRABALHAMOS",
     },
     {
       title: "Incorporação",
@@ -23,6 +25,7 @@ export default function Services() {
         "A PAGV expandiu com uma empresa do grupo voltada à incorporação. Iniciamos a primeira incorporação e estruturamos uma linha dedicada, com governança, rigor técnico e transparência.",
       image: "/large-building-construction-site-with-cranes.jpg",
       link: "/servicos/incorporacao-construcao-edificios",
+      buttonText: "SAIBA MAIS",
     },
   ]
 
@@ -64,7 +67,7 @@ export default function Services() {
                       variant="outline"
                       className="border-2 border-[#1e3a52] text-[#1e3a52] hover:bg-[#1e3a52] hover:text-white px-8 py-2 font-semibold bg-transparent transition-all duration-300"
                     >
-                      SAIBA MAIS
+                      {service.buttonText}
                     </Button>
                   </Link>
                 </div>
