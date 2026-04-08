@@ -9,9 +9,6 @@ export default function Hero() {
       
       <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-32 relative z-10">
         <div className="max-w-3xl animate-fade-in">
-          <p className="text-xs sm:text-sm font-semibold mb-4 sm:mb-6 tracking-[0.2em] sm:tracking-[0.3em] text-[#a8a9ad] uppercase">
-            PAGV
-          </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-[1.1] text-balance">
             Gestão completa de obras de alto luxo.
           </h1>
