@@ -43,17 +43,22 @@ export default function IncorporacaoConstrucaoEdificios() {
           </div>
 
           <div className="flex flex-col gap-12 mb-16">
-            <div className="overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 w-full">
+            <a
+              href="https://www.residencialaltodasmansoes.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 w-full block"
+            >
               <img
-                src="/large-building-construction-site-with-cranes.jpg"
-                alt="Incorporação e Construção de Edifícios"
+                src="/alto-das-mansoes.jpg"
+                alt="Alto das Mansões - Incorporação PAGV"
                 className="w-full h-auto object-cover max-h-96"
               />
-            </div>
+            </a>
 
             <div className="bg-white rounded-2xl shadow-xl p-8 space-y-6">
               <p className="text-gray-700 leading-relaxed text-justify text-lg">
-                {"A PAGV® está estruturando um novo braço empresarial dedicado exclusivamente à incorporação e construção de edifícios. Esta iniciativa nasce da nossa expertise consolidada em engenharia de alto padrão e representa um passo estratégico para atender este mercado com a mesma excelência que nos define.\n\nEnquanto formalizamos a abertura da nova empresa, todas as operações de incorporação seguem sob a chancela da PAGV®, garantindo continuidade e segurança para nossos parceiros e clientes.\n\nNosso compromisso é transformar visões arquitetônicas em realidade, aplicando a engenharia de precisão que desenvolvemos. Cada projeto será conduzido por uma equipe especializada, assegurando que todos os aspectos — desde a concepção até a entrega final — sejam executados com excelência.\n"} 
+                {"A PAGV® está estruturando um novo braço empresarial dedicado exclusivamente à incorporação e construção de edifícios. Esta iniciativa nasce da nossa expertise consolidada em engenharia de alto padrão e representa um passo estratégico para atender este mercado com a mesma excelência que nos define.\n\nEnquanto formalizamos a abertura da nova empresa, todas as operações de incorporação seguem sob a chancela da PAGV®, garantindo continuidade e segurança para nossos parceiros e clientes.\n\nNosso compromisso é transformar visões arquitetônicas em realidade, aplicando a engenharia de precisão que desenvolvemos. Cada projeto será conduzido por uma equipe especializada, assegurando que todos os aspectos, desde a concepção até a entrega final, sejam executados com excelência.\n"} 
               </p>
 
               
