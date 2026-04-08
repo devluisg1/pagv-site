@@ -31,11 +31,13 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="relative h-[400px] sm:h-[500px] md:h-[650px] rounded-2xl overflow-hidden shadow-elegant-lg group order-first md:order-last">
-            <img
-              src="/modern-construction-building-facade-with-pagv-logo.jpg"
-              alt="Fachada da PAGV Construção"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          <div className="relative w-full order-first md:order-last rounded-2xl overflow-hidden shadow-elegant-lg" style={{ aspectRatio: "16/9" }}>
+            <iframe
+              src="https://www.youtube.com/embed/tFcSe5FkzaM"
+              title="PAGV Construção"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
             />
           </div>
         </div>
