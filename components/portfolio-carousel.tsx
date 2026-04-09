@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useEffect, useState } from "react"
 
 interface Project {
   id: number
@@ -30,6 +31,7 @@ export default function PortfolioCarousel({
 }: PortfolioCarouselProps) {
   const itemsPerSlide = 4
   const totalSlides = projects.length
+  const [isHovered, setIsHovered] = useState(false)
 
   const handlePrevious = () => {
     onSlideChange((currentSlide - 1 + totalSlides) % totalSlides)
@@ -39,13 +41,25 @@ export default function PortfolioCarousel({
     onSlideChange((currentSlide + 1) % totalSlides)
   }
 
+  useEffect(() => {
+    if (isHovered) return
+    const interval = setInterval(() => {
+      onSlideChange((currentSlide + 1) % totalSlides)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [currentSlide, isHovered, onSlideChange, totalSlides])
+
   const visibleProjects = Array.from(
     { length: itemsPerSlide },
     (_, i) => projects[(currentSlide + i) % projects.length]
   )
 
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Grid de imagens */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
         {visibleProjects.map((project) => (

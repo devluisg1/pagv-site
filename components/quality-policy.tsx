@@ -64,10 +64,11 @@ export default function QualityPolicy() {
         <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {policies.map((policy, index) => {
             const IconComponent = policy.icon
+            const isLastOdd = index === policies.length - 1 && policies.length % 2 !== 0
             return (
               <div
                 key={index}
-                className="group bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 hover:bg-white/15 transition-all duration-500 border border-white/20 hover:border-[#d4af37]/50 hover:shadow-2xl hover:-translate-y-2"
+                className={`group bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 hover:bg-white/15 transition-all duration-500 border border-white/20 hover:border-[#d4af37]/50 hover:shadow-2xl hover:-translate-y-2${isLastOdd ? " sm:col-span-2 sm:max-w-lg sm:mx-auto sm:w-full" : ""}`}
               >
                 <div className="mb-4 sm:mb-6 inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#d4af37]/20 border-2 border-[#d4af37] group-hover:scale-110 transition-transform duration-300">
                   <IconComponent className="w-7 h-7 sm:w-8 sm:h-8 text-[#d4af37]" />

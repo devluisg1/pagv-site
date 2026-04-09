@@ -47,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased overflow-x-hidden`}>
         {children}
         <Analytics />
       </body>
