@@ -29,18 +29,20 @@ export default function PortfolioCarousel({
   onSlideChange,
 }: PortfolioCarouselProps) {
   const itemsPerSlide = 4
-  const totalSlides = Math.ceil(projects.length / itemsPerSlide)
+  const totalSlides = projects.length
 
   const handlePrevious = () => {
-    onSlideChange(currentSlide === 0 ? totalSlides - 1 : currentSlide - 1)
+    onSlideChange((currentSlide - 1 + totalSlides) % totalSlides)
   }
 
   const handleNext = () => {
-    onSlideChange(currentSlide === totalSlides - 1 ? 0 : currentSlide + 1)
+    onSlideChange((currentSlide + 1) % totalSlides)
   }
 
-  const startIndex = currentSlide * itemsPerSlide
-  const visibleProjects = projects.slice(startIndex, startIndex + itemsPerSlide)
+  const visibleProjects = Array.from(
+    { length: itemsPerSlide },
+    (_, i) => projects[(currentSlide + i) % projects.length]
+  )
 
   return (
     <div className="relative">
@@ -89,7 +91,7 @@ export default function PortfolioCarousel({
 
           {/* Indicadores de slide */}
           <div className="flex justify-center gap-2 mt-6">
-            {Array.from({ length: totalSlides }).map((_, index) => (
+            {projects.map((_, index) => (
               <button
                 key={index}
                 onClick={() => onSlideChange(index)}

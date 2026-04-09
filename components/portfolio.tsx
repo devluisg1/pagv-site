@@ -13,7 +13,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section id="portfolio" className="py-12 md:py-16 bg-white">
+      <section id="obras" className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-4xl font-normal text-gray-800 mb-2">Obras Realizadas</h2>
           <div className="w-full h-px bg-gray-300 mb-8 md:mb-12" />
