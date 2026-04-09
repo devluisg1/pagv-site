@@ -10,7 +10,7 @@ interface Project {
   alt: string
   title: string
   category: string
-  year: string
+  year?: string
   area: string
   location: string
   services: string[]
