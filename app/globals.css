@@ -3,39 +3,9 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@keyframes slideBackgrounds {
-  0% {
-    background-image: linear-gradient(rgba(30, 58, 82, 0.5), rgba(30, 58, 82, 0.5)), url('/hero-bg-1.jpg');
-    background-size: 100%;
-  }
-  15% {
-    background-size: 115%;
-  }
-  33% {
-    background-image: linear-gradient(rgba(30, 58, 82, 0.5), rgba(30, 58, 82, 0.5)), url('/hero-bg-2.jpg');
-    background-size: 100%;
-  }
-  48% {
-    background-size: 115%;
-  }
-  66% {
-    background-image: linear-gradient(rgba(30, 58, 82, 0.5), rgba(30, 58, 82, 0.5)), url('/hero-bg-3.jpg');
-    background-size: 100%;
-  }
-  81% {
-    background-size: 115%;
-  }
-  100% {
-    background-image: linear-gradient(rgba(30, 58, 82, 0.5), rgba(30, 58, 82, 0.5)), url('/hero-bg-1.jpg');
-    background-size: 100%;
-  }
-}
-
-.hero-carousel {
-  animation: slideBackgrounds 15s ease-in-out infinite;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
 }
 
 :root {
