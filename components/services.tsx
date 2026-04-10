@@ -23,7 +23,7 @@ export default function Services() {
       title: "Incorporação",
       description:
         "A PAGV expandiu com uma empresa do grupo voltada à incorporação. Iniciamos a primeira incorporação e estruturamos uma linha dedicada, com governança, rigor técnico e transparência.",
-      image: "/large-building-construction-site-with-cranes.jpg",
+      image: "/alto-das-mansoes.jpg",
       link: "/servicos/incorporacao-construcao-edificios",
       buttonText: "SAIBA MAIS",
     },

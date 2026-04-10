@@ -4,7 +4,7 @@ const img = (casa: string, file: string) =>
 export const projects = [
   {
     id: 1,
-    image: img("Residência RL", "DJI_0875 (1).webp"),
+    image: img("Residência RL", "DSC02332 (1).webp"),
     alt: "Residência RL - Campinas",
     title: "Residência RL",
     category: "Residencial",
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: img("Residência LB", "Pagv - Casa Valinhos (26).webp"),
+    image: img("Residência LB", "Pagv - Casa Valinhos (66).webp"),
     alt: "Residência LB - Valinhos",
     title: "Residência LB",
     category: "Residencial",
@@ -97,7 +97,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: img("Residência LM", "DJI_0037.webp"),
+    image: img("Residência LM", "_DSC5676-Editar.webp"),
     alt: "Residência LM - Campinas",
     title: "Residência LM",
     category: "Residencial",
@@ -134,7 +134,7 @@ export const projects = [
   },
   {
     id: 5,
-    image: img("Residência BM", "FOTOS CASA PAULÍNIA - @polen.producer-1.webp"),
+    image: img("Residência BM", "FOTOS CASA PAULÍNIA - @polen.producer-95.webp"),
     alt: "Residência BM - Paulínia",
     title: "Residência BM",
     category: "Residencial",
