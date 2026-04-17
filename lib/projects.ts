@@ -75,9 +75,10 @@ export const projects = [
     category: "Residencial",
     location: "Vinhedo - SP",
     area: "332,20m²",
-    terreno: "Não informado",
+    terreno: "700m²",
     architect: "Priscila Alves",
     interior: "Priscila Alves",
+    landscaping: "Chris Pompeo",
     photographer: "Pólen Producer",
     description: "Elegância e Acolhimento",
     detailedDescription:

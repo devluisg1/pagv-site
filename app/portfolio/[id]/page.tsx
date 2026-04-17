@@ -86,6 +86,9 @@ function ProjectDetailClient({ project }: { project: typeof projects[0] }) {
               {project.interior && project.interior !== "Não informado" && (
                 <p className="text-gray-700"><span className="font-semibold text-[#1e3a52]">Projeto de Interiores:</span> {project.interior}</p>
               )}
+              {(project as any).landscaping && (
+                <p className="text-gray-700"><span className="font-semibold text-[#1e3a52]">Paisagismo:</span> {(project as any).landscaping}</p>
+              )}
               {project.photographer && project.photographer !== "Não informado" && (
                 <p className="text-gray-700"><span className="font-semibold text-[#1e3a52]">Fotos:</span> {project.photographer}</p>
               )}

@@ -1,8 +1,9 @@
 'use client'
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import type { ReactNode } from "react"
 
-const faqs = [
+const faqs: { id: string; question: string; answer: ReactNode }[] = [
   {
     id: "1",
     question: "A PAGV trabalha com quais tipos de obra?",
@@ -31,7 +32,7 @@ const faqs = [
     id: "5",
     question: "A PAGV realiza reformas?",
     answer:
-      "Sim, realizamos reformas de alto padrão dentro do nosso escopo de gestão e padrão técnico, mas para garantir segurança, padrão de execução e cumprimento de prazos, atuamos apenas em reformas com o imóvel desocupado.",
+      <>Sim, realizamos reformas de alto padrão dentro do nosso escopo de gestão e padrão técnico, mas para garantir segurança, padrão de execução e cumprimento de prazos, atuamos apenas em <strong>reformas com o imóvel desocupado</strong>.</>,
   },
   {
     id: "6",

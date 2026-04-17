@@ -63,36 +63,21 @@ export default function ConstrucoesComerciaisIndustriais() {
               <div>
                 <h2 className="text-2xl font-bold text-[#1e3a52] mb-4">O que entregamos</h2>
                 <ul className="space-y-3">
-                  <li className="flex items-start space-x-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-[#d4af37] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                    <div className="text-gray-700">
-                      <span className="font-semibold text-[#1e3a52]">Planejamento de execução com foco em prazos e interferências na operação</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-[#d4af37] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                    <div className="text-gray-700">
-                      <span className="font-semibold text-[#1e3a52]">Orçamento e controle de custos com gestão organizada de fornecedores</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-[#d4af37] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                    <div className="text-gray-700">
-                      <span className="font-semibold text-[#1e3a52]">Coordenação de cronograma, equipes e frentes de obra</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-[#d4af37] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                    <div className="text-gray-700">
-                      <span className="font-semibold text-[#1e3a52]">Acompanhamento técnico e controle de qualidade na execução</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start space-x-3 group">
-                    <CheckCircle2 className="w-6 h-6 text-[#d4af37] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                    <div className="text-gray-700">
-                      <span className="font-semibold text-[#1e3a52]">Comunicação objetiva com registros e alinhamentos frequentes</span>
-                    </div>
-                  </li>
+                  {[
+                    { title: "Planejamento de execução", desc: "com foco em prazos e interferências na operação" },
+                    { title: "Orçamento e controle de custos", desc: "com gestão organizada de fornecedores" },
+                    { title: "Coordenação de cronograma", desc: "equipes e frentes de obra" },
+                    { title: "Acompanhamento técnico", desc: "controle de qualidade na execução" },
+                    { title: "Comunicação objetiva", desc: "registros e alinhamentos frequentes" },
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start space-x-3 group">
+                      <CheckCircle2 className="w-6 h-6 text-[#d4af37] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                      <div className="text-gray-700">
+                        <span className="font-bold text-[#1e3a52]">{item.title}</span>{" "}
+                        <span className="text-gray-700">— {item.desc}</span>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
