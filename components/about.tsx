@@ -5,8 +5,8 @@ export default function About() {
   return (
     <section id="sobre" className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
-          <div className="space-y-4 sm:space-y-6 animate-fade-in">
+        <div className="flex flex-col gap-8 sm:gap-10">
+          <div className="space-y-4 sm:space-y-6 animate-fade-in max-w-3xl">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e3a52] leading-tight text-balance">
               CONHEÇA MAIS SOBRE A PAGV
             </h2>
@@ -15,7 +15,6 @@ export default function About() {
               <p>
                 A PAGV® nasceu da parceria entre os engenheiros Plinio Alves e Glauco Vilena, com mais de 20 anos de experiência em gestão de projetos. Atuamos na gestão completa de obras de alto luxo, residenciais e comerciais, com um atendimento próximo e altamente personalizado.
               </p>
-
               <p>
                 Aplicamos processos e ferramentas de grandes empreendimentos para trazer previsibilidade, organização e controle à obra. O cliente acompanha os custos com transparência, enquanto a PAGV coordena prazos, fornecedores, qualidade e decisões técnicas, do planejamento à entrega.
               </p>
@@ -31,10 +30,10 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="relative w-full order-first md:order-last rounded-2xl overflow-hidden shadow-elegant-lg" style={{ aspectRatio: "16/9" }}>
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-elegant-lg" style={{ aspectRatio: "16/9" }}>
             <iframe
-              src="https://www.youtube.com/embed/tFcSe5FkzaM"
-              title="PAGV Construção"
+              src="https://www.youtube.com/embed/bGWPExqocxo"
+              title="Video Institucional PAGV"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="absolute inset-0 w-full h-full"
