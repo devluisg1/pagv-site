@@ -5,8 +5,8 @@ export default function About() {
   return (
     <section id="sobre" className="py-12 sm:py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex flex-col gap-8 sm:gap-10">
-          <div className="space-y-4 sm:space-y-6 animate-fade-in max-w-3xl">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
+          <div className="space-y-4 sm:space-y-6 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e3a52] leading-tight text-balance">
               CONHEÇA MAIS SOBRE A PAGV
             </h2>
@@ -30,7 +30,7 @@ export default function About() {
             </Link>
           </div>
 
-          <div className="relative w-full rounded-2xl overflow-hidden shadow-elegant-lg" style={{ aspectRatio: "16/9" }}>
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-elegant-lg mx-auto max-w-sm" style={{ aspectRatio: "9/16" }}>
             <iframe
               src="https://www.youtube.com/embed/bGWPExqocxo"
               title="Video Institucional PAGV"
