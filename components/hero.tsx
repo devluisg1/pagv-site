@@ -30,14 +30,21 @@ export default function Hero() {
       {heroImages.map((src, i) => (
         <div
           key={src}
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 overflow-hidden"
           style={{
-            backgroundImage: `url(${src})`,
             opacity: i === current ? 1 : 0,
             transition: "opacity 1.5s ease-in-out",
-            animation: i === current ? "kenBurns 6s ease-in-out forwards" : "none",
           }}
-        />
+        >
+          <img
+            src={src}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            style={{
+              animation: i === current ? "kenBurns 6s ease-in-out forwards" : "none",
+            }}
+          />
+        </div>
       ))}
 
       {/* Overlay */}
