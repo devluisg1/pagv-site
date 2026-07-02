@@ -32,10 +32,11 @@ export default function About() {
 
           <div className="relative w-full rounded-2xl overflow-hidden shadow-elegant-lg mx-auto max-w-sm" style={{ aspectRatio: "9/16" }}>
             <iframe
-              src="https://www.youtube.com/embed/bGWPExqocxo"
+              src="https://www.youtube-nocookie.com/embed/bGWPExqocxo"
               title="Video Institucional PAGV"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              loading="lazy"
               className="absolute inset-0 w-full h-full"
             />
           </div>

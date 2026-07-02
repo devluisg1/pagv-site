@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Services() {
@@ -43,12 +44,13 @@ export default function Services() {
               key={index}
               className="flex flex-col bg-white rounded-xl overflow-hidden shadow-elegant hover:shadow-elegant-lg transition-all duration-300 hover:-translate-y-2 group"
             >
-              <div className="mb-0 overflow-hidden h-64">
-                <img
+              <div className="relative mb-0 overflow-hidden h-64">
+                <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
 

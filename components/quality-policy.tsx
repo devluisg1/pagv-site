@@ -53,12 +53,12 @@ export default function QualityPolicy() {
             Política de Qualidade da PAGV
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-gray-200 max-w-4xl mx-auto leading-relaxed px-2">
+          <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-gray-50 max-w-4xl mx-auto leading-relaxed px-2">
             Temos o compromisso de entregar serviços que não apenas atendam, mas superem as expectativas dos nossos
             clientes e parceiros.
           </p>
 
-          <p className="text-base sm:text-lg text-gray-300 font-semibold">Para isso, atuamos com foco em:</p>
+          <p className="text-base sm:text-lg text-gray-100 font-semibold">Para isso, atuamos com foco em:</p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
@@ -80,7 +80,7 @@ export default function QualityPolicy() {
 
                 <div className="w-12 sm:w-16 h-0.5 bg-[#d4af37] mb-3 sm:mb-4 group-hover:w-20 sm:group-hover:w-24 transition-all duration-300"></div>
 
-                <p className="text-gray-200 text-base sm:text-lg leading-relaxed">{policy.description}</p>
+                <p className="text-gray-50 text-base sm:text-lg leading-relaxed">{policy.description}</p>
               </div>
             )
           })}
