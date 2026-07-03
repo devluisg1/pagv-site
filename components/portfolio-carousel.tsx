@@ -104,16 +104,20 @@ export default function PortfolioCarousel({
           </button>
 
           {/* Indicadores de slide */}
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-1 mt-4">
             {projects.map((_, index) => (
               <button
                 key={index}
                 onClick={() => onSlideChange(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? "bg-[#1e3a52] w-6" : "bg-gray-300 hover:bg-gray-400"
-                }`}
+                className="p-2 flex items-center justify-center min-w-6 min-h-6"
                 aria-label={`Ir para slide ${index + 1}`}
-              />
+              >
+                <span
+                  className={`block h-2 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? "bg-[#1e3a52] w-6" : "w-2 bg-gray-300 hover:bg-gray-400"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </>

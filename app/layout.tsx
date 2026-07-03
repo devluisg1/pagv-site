@@ -9,6 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.pagv.com.br"),
   title: "PAGV Construção - Expertise, Qualidade e Segurança",
   description:
     "Mais de duas décadas de experiência transformando projetos em realidade. Do residencial ao industrial, entregamos excelência e tranquilidade.",

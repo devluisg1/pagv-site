@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -16,18 +17,31 @@ const heroImages = [
 
 export default function Hero() {
   const [current, setCurrent] = useState(0)
+  // Monta as imagens progressivamente: só a primeira entra no carregamento
+  // inicial (LCP); as demais são montadas uma à frente do slide atual.
+  const [mounted, setMounted] = useState(1)
 
   useEffect(() => {
+    const preload = setTimeout(() => {
+      setMounted(m => Math.max(m, 2))
+    }, 3000)
     const timer = setInterval(() => {
-      setCurrent(prev => (prev + 1) % heroImages.length)
+      setCurrent(prev => {
+        const next = (prev + 1) % heroImages.length
+        setMounted(m => Math.max(m, Math.min(next + 2, heroImages.length)))
+        return next
+      })
     }, 5000)
-    return () => clearInterval(timer)
+    return () => {
+      clearTimeout(preload)
+      clearInterval(timer)
+    }
   }, [])
 
   return (
     <section className="relative text-white min-h-[100svh] flex items-center pt-16 sm:pt-20 overflow-hidden">
       {/* Background images com crossfade + Ken Burns */}
-      {heroImages.map((src, i) => (
+      {heroImages.slice(0, mounted).map((src, i) => (
         <div
           key={src}
           className="absolute inset-0 overflow-hidden"
@@ -36,10 +50,13 @@ export default function Hero() {
             transition: "opacity 1.5s ease-in-out",
           }}
         >
-          <img
+          <Image
             src={src}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            fill
+            priority={i === 0}
+            sizes="100vw"
+            className="object-cover object-center"
             style={{
               animation: i === current ? "kenBurns 6s ease-in-out forwards" : "none",
             }}
