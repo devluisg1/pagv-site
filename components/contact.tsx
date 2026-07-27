@@ -22,7 +22,8 @@ export default function Contact() {
 
   const handleWhatsappClick = () => {
     // Link WhatsApp da PAGV
-    window.open("https://wa.me/5519329188859", "_blank")
+    const mensagem = "Olá! Vim através do site da PAGV e gostaria de mais informações."
+    window.open(`https://wa.me/551932918859?text=${encodeURIComponent(mensagem)}`, "_blank")
   }
 
   return (
